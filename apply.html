@@ -1,0 +1,52 @@
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Apply for a Job</h2>
+    <form action="https://formsubmit.co/your-email@gmail.com" method="POST" enctype="multipart/form-data">
+      
+      <!-- Job Post (autofilled from URL) -->
+      <div class="mb-3">
+        <label class="form-label">Job Position</label>
+        <select name="job" class="form-select" id="jobSelect">
+          <option value="Frontend Developer">Frontend Developer</option>
+          <option value="Python Intern">Python Intern</option>
+        </select>
+      </div>
+
+      <!-- Name -->
+      <div class="mb-3">
+        <label class="form-label">Your Name</label>
+        <input type="text" name="name" class="form-control" required>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email" name="email" class="form-control" required>
+      </div>
+
+      <!-- Resume -->
+      <div class="mb-3">
+        <label class="form-label">Upload Resume (PDF only)</label>
+        <input type="file" name="resume" accept=".pdf" class="form-control" required>
+      </div>
+
+      <!-- Message -->
+      <div class="mb-3">
+        <label class="form-label">Why Should We Hire You?</label>
+        <textarea name="message" class="form-control" rows="4"></textarea>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn btn-primary">Submit Application</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  // Auto select job from URL (like ?job=Frontend Developer)
+  const params = new URLSearchParams(window.location.search);
+  const job = params.get("job");
+  if (job) {
+    document.getElementById("jobSelect").value = job;
+  }
+</script>
