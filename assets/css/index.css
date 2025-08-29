@@ -1,0 +1,108 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(135deg, #f8f6ff, #fffaf6);
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(120deg, rgba(83,65,147,0.4), rgba(255,129,16,0.3));
+  backdrop-filter: saturate(120%) blur(6px);
+  box-shadow: 0 2px 6px rgba(194, 69, 69, 0.2);
+}
+.navbar .nav-link {
+  color: #0f185aff !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #f47a09ff !important;
+  text-shadow: 0 0 8px rgba(221, 194, 212, 0.6);
+}
+.navbar-brand {
+  font-weight: 700;
+  color: #fdfcfcff !important;
+}
+.navbar-brand span:first-child {
+  color: #ece4e4ff;
+}
+
+/* Hero Section */
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(120deg, rgba(83,65,147,0.4), rgba(255,129,16,0.3));
+  animation: bgMove 10s infinite alternate;
+  z-index: 1;
+}
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: left;
+  background: url("assets/images/slide12.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 60px 15px;
+}
+#hero .container {
+  position: relative;
+  z-index: 2;
+}
+#hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  background: linear-gradient(270deg, #8977cdff, #b37642ff, #423284ff);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s ease infinite;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+#hero p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-gradient {
+  background: linear-gradient(90deg, #534193, #ff8110);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 20px rgba(83,65,147,0.6);
+  color: #fff;
+}
+
+/* Section */
+section { padding: 80px 0; }
+section h2 { font-family: 'Playfair Display', serif; margin-bottom: 20px; }
+
+/* Footer */
+footer {
+  background: linear-gradient(120deg, rgba(83,65,147,0.4), rgba(255,129,16,0.3));
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

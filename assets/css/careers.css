@@ -1,0 +1,44 @@
+body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .job-card {
+      transition: transform 0.3s ease;
+    }
+    .job-card:hover {
+      transform: translateY(-5px);
+    }
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(120deg, rgba(83,65,147,0.4), rgba(255,129,16,0.3));
+  backdrop-filter: saturate(120%) blur(6px);
+  box-shadow: 0 2px 6px rgba(194, 69, 69, 0.2);
+}
+.navbar .nav-link {
+  color: #0f185aff !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #f47a09ff !important;
+  text-shadow: 0 0 8px rgba(221, 194, 212, 0.6);
+}
+.navbar-brand {
+  font-weight: 700;
+  color: #fdfcfcff !important;
+}
+.navbar-brand span:first-child {
+  color: #ece4e4ff;
+}
+
+/*footer*/
+footer {
+      background: linear-gradient(135deg, #534193, #ff8110);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }    
