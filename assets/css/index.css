@@ -10,6 +10,22 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+   /* Har section equal height (full viewport) */
+   section {
+      min-height: 100vh;   /* poora screen cover kare */
+      display: flex;
+      align-items: center;
+      padding: 60px 0;     /* thoda breathing space */
+   }
+
+   /* Footer ko alag hi rakho */
+   footer {
+      min-height: auto;
+      padding: 40px 0;
+   }
+
+
 /* Navbar */
 .navbar {
   background: linear-gradient(120deg, rgba(83,65,147,0.4), rgba(255,129,16,0.3));
@@ -114,6 +130,7 @@ footer {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
