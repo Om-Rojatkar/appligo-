@@ -40,10 +40,17 @@ body {
   color: #ece4e4ff;
 }
 
-    footer {
+ /*footer*/
+footer {
       background: linear-gradient(135deg, #534193, #ff8110);
       color: #fff;
-      padding: 20px 0;
+      padding: 5px 0;
       text-align: center;
-    }
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+    }    
+
     
