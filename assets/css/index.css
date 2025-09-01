@@ -4,6 +4,12 @@ body {
   background: linear-gradient(135deg, #f8f6ff, #fffaf6);
 }
 
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 /* Navbar */
 .navbar {
   background: linear-gradient(120deg, rgba(83,65,147,0.4), rgba(255,129,16,0.3));
@@ -35,6 +41,8 @@ body {
   background: linear-gradient(120deg, rgba(83,65,147,0.4), rgba(255,129,16,0.3));
   animation: bgMove 10s infinite alternate;
   z-index: 1;
+  width: 100%;
+  overflow: hidden;
 }
 #hero {
   min-height: 100vh;
@@ -106,6 +114,7 @@ footer {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
